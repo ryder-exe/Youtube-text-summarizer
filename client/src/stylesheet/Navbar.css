@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.Navbarcontent {
+    position: absolute;
+    top: -5vh; /* Updated to start above the screen */
+    z-index: 100;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-bottom: 1px solid rgb(157, 10, 255);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+}
+.Logotext{
+    padding-left: 2%;
+}
+.Logotext:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.tbldata{
+    width: 20%;
+    height: 5vh;
+}
+.tbldata ul{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.tbldata ul li{
+    padding: 0 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+}
+.linkstyle{
+    text-decoration: none;
+    color: white;
+}
+@media only screen and (max-width: 600px) {
+    .tbldata{
+        width: 50%;
+    }
+    .tbldata ul li{
+        padding: 0 10px;
+    }
+}

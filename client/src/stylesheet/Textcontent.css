@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.hide{
+    display: none;
+}
+.textmain{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+}
+.box1{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box2{
+    width: 50%;
+    height: 100vh;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.text1{
+    color: white;
+    font-size: 3.5rem;
+    text-shadow: 0 0 2px white;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0;
+}
+.text2{
+    color: rgb(157, 10, 255);
+    text-shadow: 0 0 2px white;
+    font-size: 3.5rem;
+    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0;
+}
+.icons{
+    color: white;
+    padding-right: 2%;
+}
+.line{
+    width: 0%;
+    height: 0.5vh;
+    padding-right: 0%;
+    background-color: antiquewhite;
+}
+.box2-innerbox{
+    z-index: 120;
+    width: 60%;
+    height: 30vh;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);     
+    backdrop-filter: blur(10px);   
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2); /* Optional: Add box shadow for depth */
+    padding: 20px; 
+}
+.boxinner-text{
+    font-size: 1rem;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+}
+.boxinner-text2{
+    color: rgba(154, 154, 154, 0.644);
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: lighter;
+    padding-top: 4%;
+}
+.box2inner-holder{
+    width: 100%;
+    height: 10vh;
+    padding-top: 5%;
+    /* background-color: antiquewhite; */
+}
+.box2inner-holder input{
+    width: 98%;
+    height: 5vh;
+    background-color: rgba(255, 255, 255, 0.1);     
+    backdrop-filter: blur(10px);   
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2); 
+    border: 1px solid rgb(157, 10, 255);
+    padding-left: 10px;
+    color: white;
+    border-radius: 10px;
+}
+.box2inner-holder .buttonholder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.buttonholder button{
+    margin-top: 5%;
+    width: 50%;
+    height: 5vh;
+    background-color: rgb(157, 10, 255);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+.buttonholder button:hover{
+   background-color: rgb(208, 139, 255);
+   transition: 0.8s;
+}
+
+.followgit{
+    width: 50%;
+    height: 5vh;
+    background-color: rgba(140, 0, 255, 0.245);     
+    backdrop-filter: blur(10px);   
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(153, 0, 255);
+    font-weight: lighter;
+    border-radius: 10px;
+    position: relative;
+    top: 25vh;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgba(91, 91, 91, 0.432);
+}
+.showing{
+    width: 45%;
+    height: 80vh;
+    /* background-color: aqua; */
+    z-index: 10;
+    background-color: rgba(140, 0, 255, 0.245);     
+    backdrop-filter: blur(10px);   
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2); 
+    margin-left: 5%;
+}
+.showingtextheader{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+.btn{
+    width: 10%;
+    height: inherit;
+    background-color: rgba(140, 0, 255, 0.245);     
+    backdrop-filter: blur(10px);   
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2); 
+    color: white;
+    border: none;
+    margin-left: 1%;
+    cursor: pointer;
+}
+.showingtext{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.showingtext textarea{
+    width: 90%;
+    height: 65vh;
+    margin-top: 1%;
+    background-color: rgba(255, 255, 255, 0.245);     
+    backdrop-filter: blur(10px);   
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px;
+    resize: none;
+    padding: 2% 2% 2% 2% ;
+    color: white;
+    text-align: justify;
+}
+.hide{
+    opacity: 0;
+}
+.show{
+    opacity: 1;
+}
+
+@media only screen and (max-width: 600px){
+    .textmain{
+        width: 100%;
+        height: 100vh;
+        display: block;
+    }
+    .box1{
+        width: 100%;
+        height: 40vh;
+    }
+    .box2{
+        width: 100%;
+        height: 30vh;   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+    }
+    .text1{
+        font-size: 2rem;
+    }
+    .text2{
+        font-size: 2rem;
+    }
+    .followgit{
+        width: 100%;
+        top: 2vh;
+    }
+    .box2-innerbox{
+        width: 80%;
+    }
+    .showing{
+        width: 90%;
+        height: 40vh;
+        margin-top: 25%;
+        margin-bottom: 10%;
+    }
+    .showingtext{
+        width: 100%;
+        height: 35vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .showingtext textarea{
+        width: 90%;
+        height: 30vh;
+        margin-top: 1%;
+        background-color: rgba(255, 255, 255, 0.245);     
+        backdrop-filter: blur(10px);   
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2); 
+        border-radius: 10px;
+        resize: none;
+        color: white;
+        text-align: justify;
+    }
+    .hol{
+        display: none;
+    }
+}
