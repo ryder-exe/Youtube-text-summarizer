@@ -1,8 +1,8 @@
-import { useEffect , useRef} from 'react';
-import '../stylesheet/background.css';
+import { useEffect, useRef } from "react";
+import "../stylesheet/background.css";
 
 function Background() {
-    const blobRef = useRef<HTMLDivElement>(null);
+  const blobRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     // const cursor = document.querySelector('.blob') as HTMLElement;
     const cursor = blobRef.current;
@@ -14,16 +14,16 @@ function Background() {
       }
     };
 
-    document.addEventListener('mousemove', updateCursorPosition);
+    document.addEventListener("mousemove", updateCursorPosition);
 
     return () => {
-      document.removeEventListener('mousemove', updateCursorPosition);
+      document.removeEventListener("mousemove", updateCursorPosition);
     };
   }, []);
 
   return (
-    <div className='blobbody'>
-      <div ref={blobRef}  className="blob"></div>
+    <div className="blobbody">
+      <div ref={blobRef} className="blob"></div>
     </div>
   );
 }
